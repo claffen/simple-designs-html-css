@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@200&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Nunito:wght@200&family=PT+Sans&family=Work+Sans:wght@300&display=swap');
+
+* {
+	margin:  0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	overflow: hidden;
+}
+
+body {
+	background-color: rgb(144, 205, 214) ;
+	transition: 0.4s;
+}
+
+.login_box {
+	position: absolute;
+	top:  50%;
+	left: 50%;
+	transform: translate(-50%, -50%);	
+	width: 300px;
+	height: 340px;
+	background-color: #fff;
+	border-radius: 15px;
+}
+
+.login_header {
+	text-align: center;
+	line-height: 50px;
+	font-size:  30px;
+	font-family: 'Noto Sans JP', sans-serif;
+	color:	#222224;
+	user-select: none;
+}
+
+.login_footer {
+	margin-top: 15px;
+	width: 122px;
+	margin-left: 89px;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.login_footer span a {
+	color:  #5f6469;
+	cursor: pointer;
+	text-decoration: underline;
+	user-select: none;
+}
+
+.login_dark {
+	display: inline-block;
+	font-size:  32px;
+	margin-top: 25px;
+	margin-left: 134px;
+	color: #222224;
+	cursor: pointer;
+}
+
+input {
+	width: 190px;
+	height: 35px;
+	margin-left:  55px;
+	border-radius: 5px;
+	border:  1px solid #000;
+	cursor: pointer;
+}
+
+input[type="text"] {
+	margin-top: 35px;
+}
+
+input[type="password"] {
+	margin-top: 10px;
+}
+
+input[type="button"] {
+	width: 74px;
+	margin-top: 10px;
+	margin-left: 113px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	background-color: #90cdd6;
+	border:  none;
+	color:  #ededed;
+	cursor:  pointer;
+}
+
+input[type="text"]:hover, input[type="password"]:hover {
+	font-size:  20px;
+	transition: 0.3s;
+}
+
+[placeholder] {
+	text-align: center;
+	font-size:  17px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: bold;
+	user-select: none;
+}
+
+@media (max-width:  320px) {
+	.login_box {
+	width: 270px;
+}
+
+	.login_footer {
+	margin-left: 79px;
+}
+
+	input {
+	margin-left:  40px;
+}
+
+	input[type="button"] {
+	margin-left: 103px;
+}
+}
